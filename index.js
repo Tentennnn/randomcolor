@@ -5,15 +5,7 @@ const fs = require('fs')
 const Canvass = require('canvas');
 const snekfetch = require('snekfetch');
 
-////////////////////////////////////////////////////////////////////////////////////
 
-const keepalive = require('express-glitch-keepalive');
-app.use(keepalive);
- 
-app.get('/', (req, res) => {
-  res.json('Ok');
-});
-/////////rainbow role///////////////////////////////////////////////////////////////////////////
 client.on("ready", async (message) => {
   
   setInterval(function() {
