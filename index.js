@@ -5,6 +5,10 @@ const fs = require('fs')
 const Canvass = require('canvas');
 const snekfetch = require('snekfetch');
 
+client.on("ready", () => { 
+console.log("ONLINE"); 
+
+});
 ////////////////////////////////////////////////////////////////////////////////////
 const applyText = (canvas, text) => {
 	const ctx = canvas.getContext('2d');
