@@ -5,28 +5,6 @@ const fs = require('fs')
 const Canvass = require('canvas');
 const snekfetch = require('snekfetch');
 
-
-client.on("ready", async (message) => {
-  
-  setInterval(function() {
-    const guild = bot.guilds.get("430630483408453633");
-  const role = guild.roles.find(r=>r.name === "PAILEV");
-    
-  let color = [
-        '#ecd012',
-        '#8edb30',
-        '#d3dbd3',
-        '#ffffff',
-        '#fafdcb',
-        '#ffffff',
-        '#c0c096'
-  ]
-  var lol = [Math.floor(Math.random() * color.length)]
-  role.setColor(color[lol])
-}, 3300)
-  
-});
-
 ////////////////////////////////////////////////////////////////////////////////////
 const applyText = (canvas, text) => {
 	const ctx = canvas.getContext('2d');
